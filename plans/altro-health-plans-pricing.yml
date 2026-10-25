@@ -1,0 +1,21 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://altrohealth.com/pricing
+sources:
+- https://altrohealth.com/pricing
+name: Altro Health pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Starter
+  price_text: $319 / month
+  price: 319
+  billing_period: monthly
+- name: Pro
+  price_text: $599 / month
+  price: 599
+  billing_period: monthly
+- name: Enterprise
+  price_text: Talk to sales
+docs: https://altrohealth.com/pricing

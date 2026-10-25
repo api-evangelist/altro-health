@@ -1,25 +1,90 @@
 aid: altro-health
+
 name: Altro Health
-description: 'Altro Health is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by founder-collective) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6a4834e640cd0e74356162bc/6a48368e7a3aff71d31eee38_Altro%20Health%20Logo%20Draft.png
+
+description: 'Altro Health provides a digital health platform that connects patients, providers, and payers to streamline care coordination, telehealth visits, and health data analytics. Founded by a collective of healthcare innovators, the company focuses on improving outcomes through integrated technology solutions and secure data exchange across the healthcare ecosystem.'
+
 url: https://raw.githubusercontent.com/api-evangelist/altro-health/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Health
+- DigitalHealth
+- Platform
+- Telehealth
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- founder-collective
+
 common:
+- type: Plans
+  url: plans/altro-health-plans-pricing.yml
+- type: SecurityTxt
+  url: well-known/altro-health-help-security.txt
+- type: WellKnown
+  url: well-known/altro-health-well-known.yml
+- type: Hosts
+  url: hosts/altro-health-hosts.yml
+- type: Vendors
+  url: vendors/altro-health-vendors.yml
+- type: Newsroom
+  url: https://altrohealth.com/news/test
+- type: Login
+  url: https://altrohealth.com/log-in
+- type: GettingStarted
+  url: https://help.altrohealth.com/en/collections/19597449-getting-started
+- type: Documentation
+  url: https://help.altrohealth.com/
+- type: DomainSecurity
+  url: security/altro-health-domain-security.yml
 - type: Website
   url: https://altrohealth.com/
+- type: Pricing
+  url: https://altrohealth.com/pricing
+- type: Blog
+  url: https://altrohealth.com/blogs
+- type: PrivacyPolicy
+  url: https://altrohealth.com/privacy
+- type: Support
+  url: https://altrohealth.com/contact
+
+apis: []
+
+x-backed-by:
+- founder-collective
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://altrohealth.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
